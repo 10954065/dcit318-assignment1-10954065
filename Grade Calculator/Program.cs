@@ -6,7 +6,7 @@ namespace GradeCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Grade Calculator!");
+            Console.WriteLine("(10954065) Frank Tei-Deku's Grade Calculator!");
             while (true)
             {
                 Console.Write("Please enter your grade here, should be between 0 and 100: ");
@@ -16,4 +16,15 @@ namespace GradeCalculator
                 {
                     string letterGrade = GetLetterGrade(grade);
                     Console.WriteLine($"The corresponding letter grade is: {letterGrade}");
-
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please enter a number between 0 and 100.");
+                }
+                Console.Write("Would you like to enter another grade? (yes/no): ");
+                string continueInput = Console.ReadLine().ToLower();
+                if (continueInput != "yes")
+                {
+                    break;
+                }
+            }
