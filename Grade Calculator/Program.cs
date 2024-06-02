@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace GradeCalculator
 {
@@ -28,7 +28,7 @@ namespace GradeCalculator
                     break;
                 }
             }
-            Console.WriteLine("Thank you for using the Grade Calculator!");
+            Console.WriteLine("Thank you for using (10954065) Frank Tei-Deku's the Grade Calculator!");
         }
         static string GetLetterGrade(int grade)
         {
@@ -36,3 +36,22 @@ namespace GradeCalculator
             {
                 return "A";
             }
+            else if (grade >= 80)
+            {
+                return "B";
+            }
+            else if (grade >= 70)
+            {
+                return "C";
+            }
+            else if (grade >= 60)
+            {
+                return "D";
+            }
+            else
+            {
+                return "F";
+            }
+        }
+    }
+}
