@@ -28,3 +28,6 @@ namespace GradeCalculator
                     break;
                 }
             }
+            Console.WriteLine("Thank you for using the Grade Calculator!");
+        }
+
