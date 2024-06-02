@@ -30,4 +30,9 @@ namespace GradeCalculator
             }
             Console.WriteLine("Thank you for using the Grade Calculator!");
         }
-
+        static string GetLetterGrade(int grade)
+        {
+            if (grade >= 90)
+            {
+                return "A";
+            }
